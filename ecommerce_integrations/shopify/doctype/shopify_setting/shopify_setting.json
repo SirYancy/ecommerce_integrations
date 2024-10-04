@@ -40,6 +40,7 @@
   "default_sales_tax_account",
   "column_break_qibo",
   "default_shipping_charges_account",
+  "preferred_mode_of_payment",
   "erpnext_to_shopify_sync_section",
   "upload_erpnext_items",
   "update_shopify_item_on_update",
@@ -140,6 +141,13 @@
    "fieldtype": "Link",
    "label": "Default Customer",
    "options": "Customer"
+  },
+  {
+    "description": "The preferred default mode of payment for Shopify orders synced to ERPNExt",
+    "fieldname": "preferred_mode_of_payment",
+    "fieldtype": "Link",
+    "label": "Preferred Mode of Payment",
+    "Options": "Mode of Payment"
   },
   {
    "fieldname": "column_break_14",
