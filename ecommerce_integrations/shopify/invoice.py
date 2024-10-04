@@ -71,5 +71,8 @@ def make_payament_entry_against_sales_invoice(doc, setting, posting_date=None):
 	payment_entry.reference_no = doc.name
 	payment_entry.posting_date = posting_date or nowdate()
 	payment_entry.reference_date = posting_date or nowdate()
+
+	payment_entry.mode_of_payment = setting.preferred_mode_of_payment or None
+
 	payment_entry.insert(ignore_permissions=True)
 	payment_entry.submit()
